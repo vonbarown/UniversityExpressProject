@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const School = require('./school.js')
+const School = require('../client/university/Schools')
 const cors = require('cors')
 const app = express();
 app.use(cors())

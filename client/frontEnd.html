@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./frontEnd.js"></script>
+    <script src="./frontEnd.css"></script>
+    <link rel="stylesheet" href="./frontEnd.css" />
+    <title>Vonbarown University</title>
+  </head>
+  <body>
+    <div id="formContainer">
+      <div id="classContainer" class="display">
+        <form id="addClass">
+          <input
+            type="text"
+            placeholder="Enter class Name"
+            id="createClass"
+            class="classname"
+          />
+          <input type="text" placeholder="Enter Teacher" id="teacher" />
+          <button id="classAdded">Add class to directory</button>
+        </form>
+      </div>
+      <div id="enrollmentContainer" class="display">
+        <form id="enrollForm">
+          <input
+            type="text"
+            placeholder="Enter class Name"
+            id="enrollClass"
+            class="classname"
+          />
+          <input
+            type="text"
+            placeholder="Enter student's name"
+            id="studentName"
+          />
+          <input type="text" placeholder="Enter student's age" id="age" />
+          <input type="text" placeholder="Enter student's city" id="city" />
+          <input type="text" placeholder="Enter student's grade" id="grade" />
+          <button id="enroll">Enroll student</button>
+        </form>
+        <!-- <div id="enrollSubContainer" class="resultsContainer"></div> -->
+      </div>
+      <div id="listStudents" class="display">
+        <form id="searchForm">
+          <input
+            type="text"
+            placeholder="Enter class name"
+            class="classname"
+            id="searchClass"
+          />
+          <!-- <input type="text" placeholder="Enter city (optional)" id="searchCity"> -->
+          <div id="check">
+            <label for="failing">Check to search fail status</label>
+            <label for="failing">Students failing:</label>
+            <input type="checkbox" name="failing" id="showFailing" />
+          </div>
+          <button id="getStudents">Search for students</button>
+        </form>
+        <!-- <div id="liStudentsSubContainer" class="resultsContainer"></div> -->
+      </div>
+      <div id="results"></div>
+    </div>
+  </body>
+</html>
